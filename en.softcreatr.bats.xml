@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="https://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="gb" languagename="English">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.module_bats"><![CDATA[Bats]]></item>
+		<item name="wcf.acp.option.category.display.bats"><![CDATA[Bats]]></item>
+		<item name="wcf.acp.option.halloween_bats_enable_mobile"><![CDATA[Enable animation on mobile devices]]></item>
+		<item name="wcf.acp.option.halloween_bats_path"><![CDATA[Image Path]]></item>
+		<item name="wcf.acp.option.halloween_bats_path.description"><![CDATA[Path or URL of the used image (Default: {@$__wcf->getPath()}images/bat.gif)]]></item>
+		<item name="wcf.acp.option.halloween_bats_number"><![CDATA[Number of displayed objects]]></item>
+		<item name="wcf.acp.option.halloween_bats_number_mobile"><![CDATA[Number of displayed objects (mobile)]]></item>
+		<item name="wcf.acp.option.halloween_bats_speed"><![CDATA[Speed]]></item>
+		<item name="wcf.acp.option.halloween_bats_speed.description"><![CDATA[Animation speed (Default: 3)]]></item>
+		<item name="wcf.acp.option.halloween_bats_scale"><![CDATA[Image Scale]]></item>
+		<item name="wcf.acp.option.halloween_bats_scale.description"><![CDATA[Maximum image size (Default: 80%)]]></item>
+	</category>
+	
+	<category name="wcf.user.option">
+		<item name="wcf.user.option.showBats"><![CDATA[Display bats]]></item>
+	</category>
+</language>

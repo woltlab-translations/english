@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="en" languagename="English" countrycode="gb">
+	<!-- timeline -->
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.user.timeline.canUseImageType"><![CDATA[Can share pictures]]></item>
+	</category>
+	<category name="timeline.type.title">
+		<item name="timeline.type.title.imageType"><![CDATA[Image]]></item>
+	</category>
+	<category name="timeline.type.notification">
+		<item name="timeline.type.notification.imageType"><![CDATA[{if $authorUser|isset && $timelineUser|isset}
+        Has shared a image {if $authorUser->userID != $timelineUser->userID}on the timeline of {@$timelineUser->getAnchorTag()}{/if}.
+        {else}Has shared a image{/if}]]></item>
+	</category>
+	<category name="timeline.general.share">
+		<item name="timeline.general.share.error.uploadFailed"><![CDATA[The upload has failed.]]></item>
+		<item name="timeline.general.share.error.invalidExtension"><![CDATA[The file has a invalid file extension.]]></item>
+	</category>
+	
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.timeline.image"><![CDATA[Images]]></item>
+		<item name="wcf.acp.option.timeline_picture_width"><![CDATA[Max. width]]></item>
+		<item name="wcf.acp.option.timeline_picture_width.description"><![CDATA[The maximum width of shared images in pixel.]]></item>
+		<item name="wcf.acp.option.timeline_picture_height"><![CDATA[Max. height]]></item>
+		<item name="wcf.acp.option.timeline_picture_height.description"><![CDATA[The maximum height of shared images in pixel.]]></item>
+		<item name="wcf.acp.option.timeline_picture_thumb_width"><![CDATA[Max. width (thumb)]]></item>
+		<item name="wcf.acp.option.timeline_picture_thumb_width.description"><![CDATA[The maximum width of previews of shared images in pixel.]]></item>
+		<item name="wcf.acp.option.timeline_picture_thumb_height"><![CDATA[Max. height (thumb)]]></item>
+		<item name="wcf.acp.option.timeline_picture_thumb_height.description"><![CDATA[The maximum height of previews of shared images in pixel.]]></item>
+		<item name="wcf.acp.option.timeline_picture_view_image_on_click"><![CDATA[View picture on click]]></item>
+		<item name="wcf.acp.option.timeline_picture_view_image_on_click.description"><![CDATA[Shows the original image in image viewer.]]></item>
+	</category>
+</language>

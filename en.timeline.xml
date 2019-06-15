@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="en" languagename="English" countrycode="gb">
+	<!-- timeline -->
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.module_timeline"><![CDATA[Timeline]]></item>
+		<item name="wcf.acp.option.category.timeline"><![CDATA[Timeline]]></item>
+		<item name="wcf.acp.option.category.timeline.entries"><![CDATA[Entries]]></item>
+		<item name="wcf.acp.option.timeline_entries_per_page"><![CDATA[Entries per page]]></item>
+		<item name="wcf.acp.option.timeline_entries_per_page.description"><![CDATA[Hint: Higher count results in longer page loading time.]]></item>
+		<item name="wcf.acp.option.timeline_entries_sort_comment"><![CDATA[Sort by last comment]]></item>
+		<item name="wcf.acp.option.timeline_entries_sort_comment.description"><![CDATA[Older entries can appear on top if a new comment was posted.]]></item>
+	</category>
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.category.user.timeline"><![CDATA[Timeline]]></item>
+		<item name="wcf.acp.group.option.user.timeline.canSee"><![CDATA[Can see timeline]]></item>
+		<item name="wcf.acp.group.option.user.timeline.canUseShare"><![CDATA[Can share entries on timeline]]></item>
+		<item name="wcf.acp.group.option.user.timeline.canComment"><![CDATA[Can write comments]]></item>
+		<item name="wcf.acp.group.option.user.timeline.canDeleteComment"><![CDATA[Can delete own comments]]></item>
+		<item name="wcf.acp.group.option.user.timeline.canEditComment"><![CDATA[Can edit own comments]]></item>
+		<item name="wcf.acp.group.option.category.mod.timeline"><![CDATA[Timeline]]></item>
+		<item name="wcf.acp.group.option.mod.timeline.canDelete"><![CDATA[Can delete entries from timeline]]></item>
+		<item name="wcf.acp.group.option.mod.timeline.canModerateComment"><![CDATA[Can moderate comments]]></item>
+		<item name="wcf.acp.group.option.user.timeline.canUseMessageShare"><![CDATA[Can share other entries]]></item>
+	</category>
+	<category name="wcf.acp.box">
+		<item name="wcf.acp.box.boxController.de.darkwood-studios.timeline.share"><![CDATA[Timeline: Share]]></item>
+		<item name="wcf.acp.box.boxController.de.darkwood-studios.timeline.activity"><![CDATA[Timeline: Last activities]]></item>
+	</category>
+	<category name="wcf.user.profile">
+		<item name="wcf.user.profile.menu.timeline"><![CDATA[Timeline]]></item>
+	</category>
+	<category name="wcf.user.recentActivity">
+		<item name="wcf.user.recentActivity.de.darkwood-studios.timeline.recentActivityEvent.entry"><![CDATA[Timeline entry]]></item>
+		<item name="wcf.user.recentActivity.de.darkwood-studios.timeline.likeableEntry.recentActivityEvent"><![CDATA[Like (Timeline)]]></item>
+		<item name="wcf.user.recentActivity.de.darkwood-studios.timeline.entryComment.recentActivityEvent"><![CDATA[Comment (Timeline)]]></item>
+		<item name="wcf.user.recentActivity.de.darkwood-studios.timeline.entryComment.response.recentActivityEvent"><![CDATA[Response (Timeline)]]></item>
+	</category>
+	
+	<category name="wcf.user.notification">
+		<item name="wcf.user.notification.de.darkwood-studios.timeline"><![CDATA[Timeline]]></item>
+		<item name="wcf.user.notification.de.darkwood-studios.timeline.entry.entry"><![CDATA[New timeline entry]]></item>
+		<item name="wcf.user.notification.de.darkwood-studios.timeline.entryComment.notification.comment"><![CDATA[New comment to your timeline entry]]></item>
+		<item name="wcf.user.notification.de.darkwood-studios.timeline.entryComment.response.notification.commentResponse"><![CDATA[New response to your timeline entry comment]]></item>
+		<item name="wcf.user.notification.de.darkwood-studios.timeline.entryComment.response.notification.commentResponseOwner"><![CDATA[New response to a comment on your timeline entry]]></item>
+		<item name="wcf.user.notification.de.darkwood-studios.timeline.likeableEntry.notification.like"><![CDATA[Someone likes your timeline entry]]></item>
+		<item name="wcf.user.notification.de.darkwood-studios.timeline.entryComment.like.notification.like"><![CDATA[Someone likes your comment]]></item>
+		<item name="wcf.user.notification.de.darkwood-studios.timeline.entryComment.response.like.notification.like"><![CDATA[Someone likes your response to a comment]]></item>
+		<item name="wcf.user.notification.de.darkwood-studios.timeline.entry.mention"><![CDATA[Notify me when I am mentioned]]></item>
+		<item name="wcf.user.notification.de.darkwood-studios.timeline.entry.share"><![CDATA[Someone shared your timeline entry]]></item>
+	</category>
+	
+	<category name="timeline.entry">
+		<item name="timeline.entry.guest"><![CDATA[Guest]]></item>
+		<item name="timeline.entry.button.comment"><![CDATA[Comment]]></item>
+		<item name="timeline.entry.commentResponse"><![CDATA[Timeline comment response]]></item>
+		<item name="timeline.entry.commentResponse.notification.title"><![CDATA[New response (Timeline)]]></item>
+		<item name="timeline.entry.commentResponse.notification.title.stacked"><![CDATA[{#$timesTriggered} new responses (Timeline)]]></item>
+		<item name="timeline.entry.commentResponse.notification.message"><![CDATA[{if $author->userID}{@$author->getAnchorTag()}{else}A guest{/if} has posted a response to your comment on a timeline]]></item>
+		<item name="timeline.entry.commentResponse.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} and {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3}{if !$guestTimesTriggered} and {else}, {/if} {@$authors[2]->getAnchorTag()}{/if}{/if}{if $guestTimesTriggered} and {if $guestTimesTriggered == 1}a guest{else}some guests{/if}{/if}{else}{@$authors[0]->getAnchorTag()}{if $guestTimesTriggered},{else} and{/if} {#$others} others {if $guestTimesTriggered}und {if $guestTimesTriggered == 1}a guest{else}guest{/if}{/if}{/if} have responded to your comment on a timeline entry.]]></item>
+		<item name="timeline.entry.commentResponse.notification.mail"><![CDATA[{if $author->userID}{@$author->username}{else}a guest{/if} has responded to a comment to a timeline entry:
+{if $notificationType == 'instant'}
+---------------------------------
+{@$response->message}
+---------------------------------
+{/if}{$entry->getLink()}]]></item>
+		<item name="timeline.entry.commentResponse.notification.mail.stacked"><![CDATA[{if $count < 4}{@$authors[0]->username}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} and {else}, {/if}{@$authors[1]->username}{if $count == 3}{if !$guestTimesTriggered} and {else}, {/if} {@$authors[2]->username}{/if}{/if}{if $guestTimesTriggered} and {if $guestTimesTriggered == 1}a guest{else}guest{/if}{/if}{else}{@$authors[0]->username}{if $guestTimesTriggered},{else} and{/if} {#$others} others {if $guestTimesTriggered}and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{/if} have responded to your comment on a timeline entry:
+{$entry->getLink()}]]></item>
+		<item name="timeline.entry.comment"><![CDATA[Timeline-Comment]]></item>
+		<item name="timeline.entry.commentCount"><![CDATA[{@$count} comment{if $count > 1}s{/if}]]></item>
+		<item name="timeline.entry.noEntry"><![CDATA[No entries found. Be the first one who shares something!]]></item>
+		<item name="timeline.entry.delete.confirmMessage"><![CDATA[Do you really want to delete this entry from the timeline?]]></item>
+		<item name="timeline.entry.hide.confirmMessage"><![CDATA[Do you really want to hide this entry?]]></item>
+		<item name="timeline.entry.hide"><![CDATA[Hide entry]]></item>
+		<item name="timeline.entry.recentActivity.entry"><![CDATA[Wrote a new timeline entry.]]></item>
+		<item name="timeline.entry.recentActivity.likedEntry"><![CDATA[Likes a timeline entry.]]></item>
+		<item name="timeline.entry.recentActivity.entryComment"><![CDATA[Commented on an timeline entry.]]></item>
+		<item name="timeline.entry.recentActivity.entryCommentResponse"><![CDATA[Replied to a comment by <a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a> on an timeline entry.]]></item>
+		<item name="timeline.entry.notification.title"><![CDATA[New timeline entry]]></item>
+		<item name="timeline.entry.notification.message"><![CDATA[{@$author->getAnchorTag()} has posted a new timeline entry]]></item>
+		<item name="timeline.entry.notification.mail"><![CDATA[{@$author->username} has posted a new timeline entry: {$entry->getLink()}]]></item>
+		<item name="timeline.entry.like.notification.title"><![CDATA[Likes your timeline entry]]></item>
+		<item name="timeline.entry.like.notification.title.stacked"><![CDATA[{#$count} like your timeline entry.]]></item>
+		<item name="timeline.entry.like.notification.message"><![CDATA[{@$author->getAnchorTag()} likes your timeline entry.]]></item>
+		<item name="timeline.entry.like.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} and {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} and {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} and {#$others} others{/if} like your timeline entry.]]></item>
+		<item name="timeline.entry.comment.notification.title"><![CDATA[New comment (Timeline)]]></item>
+		<item name="timeline.entry.comment.notification.title.stacked"><![CDATA[{#$timesTriggered} new comments (Timeline)]]></item>
+		<item name="timeline.entry.comment.notification.message"><![CDATA[{if $author->userID}{@$author->getAnchorTag()}{else}A guest{/if} commented on your timeline entry.]]></item>
+		<item name="timeline.entry.comment.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} and {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3}{if !$guestTimesTriggered} and {else}, {/if} {@$authors[2]->getAnchorTag()}{/if}{/if}{if $guestTimesTriggered} and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{else}{@$authors[0]->getAnchorTag()}{if $guestTimesTriggered},{else} and{/if} {#$others} other users {if $guestTimesTriggered}and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{/if} commented on your timeline entry.]]></item>
+		<item name="timeline.entry.comment.like.notification.title"><![CDATA[Likes your comment (Timeline)]]></item>
+		<item name="timeline.entry.comment.like.notification.title.stacked"><![CDATA[{#$count} like your comment (Timeline)]]></item>
+		<item name="timeline.entry.comment.like.notification.message"><![CDATA[{if $author->userID}{@$author->getAnchorTag()}{else}A guest{/if} likes your comment on a timeline entry.]]></item>
+		<item name="timeline.entry.comment.like.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} and {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} and {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} and {#$others} others{/if} like your comment to a timeline entry.]]></item>
+		<item name="timeline.entry.mention.notification.title"><![CDATA[You were mentioned]]></item>
+		<item name="timeline.entry.mention.notification.message"><![CDATA[{@$author->getAnchorTag()} mentioned you in the an timeline entry.]]></item>
+		<item name="timeline.entry.mention.notification.mail"><![CDATA[{@$author->username} mentioned you in an timeline entry:
+{$entry->getLink()}]]></item>
+		
+		<item name="timeline.entry.comment.like.notification.message"><![CDATA[{@$author->getAnchorTag()} likes your comment on a timeline entry.]]></item>
+		<item name="timeline.entry.comment.like.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} and {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} and {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} and {#$others} others{/if} like your comment on a timeline entry.]]></item>
+		
+		<item name="timeline.entry.commentResponse.like.notification.title"><![CDATA[Likes your reply to a comment (Timeline)]]></item>
+		<item name="timeline.entry.commentResponse.like.notification.title.stacked"><![CDATA[{#$count} users like your reply to a comment (Timeline)]]></item>
+		
+		<item name="timeline.entry.commentResponse.like.notification.message"><![CDATA[{@$author->getAnchorTag()} likes your reply to a comment on a timeline entry.]]></item>
+		<item name="timeline.entry.commentResponse.like.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} and {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} and {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} and {#$others} others{/if} like your reply to a comment on a timeline entry.]]></item>
+		
+		<item name="timeline.entry.share.notification.title"><![CDATA[Your entry was shared.]]></item>
+		<item name="timeline.entry.share.notification.message"><![CDATA[{@$author->getAnchorTag()} shared your entry on the timeline.]]></item>
+		<item name="timeline.entry.share.notification.mail"><![CDATA[{@$author->getAnchorTag()} shared your entry on the timeline:
+{$entry->getLink()}]]></item>
+	</category>
+	<category name="timeline.type.title">
+		<item name="timeline.type.title.messageType"><![CDATA[Message]]></item>
+	</category>
+	<category name="timeline.type.notification">
+		<item name="timeline.type.notification.messageType"><![CDATA[
+        {if $authorUser|isset && $timelineUser|isset}
+        Shared something on {if $authorUser->userID == $timelineUser->userID}his own timeline {else}on the timeline of {@$timelineUser->getAnchorTag()}{/if}.
+        {else}
+        Shared something.
+        {/if}
+]]></item>
+	</category>
+	<category name="timeline.general.share">
+		<item name="timeline.general.share.status"><![CDATA[{if $userID == $__wcf->getUser()->userID}Share something…{else}Share something with{@$userProfile->username}{/if}…]]></item>
+		<item name="timeline.general.share.saved"><![CDATA[The entry was added to {if $userID == $__wcf->getUser()->userID}your timeline.{else}the timeline of {@$userProfile->username}.{/if}]]></item>
+		<item name="timeline.general.share.error.uploadFailed"><![CDATA[Upload failed.]]></item>
+		<item name="timeline.general.share.saySomething"><![CDATA[Say something about...]]></item>
+		<item name="timeline.general.share.onOwnTimeline"><![CDATA[Share on own timeline]]></item>
+		<item name="timeline.general.share.share"><![CDATA[Share]]></item>
+		<item name="timeline.general.share.shareNow"><![CDATA[Share now]]></item>
+		<item name="timeline.general.share.noContent"><![CDATA[This content is not longer available.]]></item>
+		<item name="timeline.general.share.showOriginal"><![CDATA[Show original]]></item>
+	</category>
+	<category name="wcf.user">
+		<item name="wcf.user.activityPoint.objectType.de.darkwood-studios.timeline.activityPointEvent.entry"><![CDATA[Timeline entries]]></item>
+	</category>
+	
+	<category name="wcf.like">
+		<item name="wcf.like.objectType.de.darkwood-studios.timeline.likeableEntry"><![CDATA[Timeline entry]]></item>
+		<item name="wcf.like.title.de.darkwood-studios.timeline.entryComment"><![CDATA[{if $like->isDislike()}Dislikes{else}Likes{/if} the comment by {if $commentAuthor}<a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>{else}a guest{/if} on a timeline entry.]]></item>
+		<item name="wcf.like.title.de.darkwood-studios.timeline.entryComment.response"><![CDATA[{if $like->isDislike()}Dislikes{else}Likes{/if} the response by {if $responseAuthor}<a href="{link controller='User' object=$responseAuthor}{/link}">{$responseAuthor->username}</a>{else}a guest{/if} on the comment by {if $commentAuthor}<a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>{else}a guest{/if} on a timeline entry.]]></item>
+		<item name="wcf.like.title.de.darkwood-studios.timeline.likeableEntry"><![CDATA[{if $like->isDislike()}Dislikes{else}Likes{/if} a timeline entry.]]></item>
+	</category>
+</language>

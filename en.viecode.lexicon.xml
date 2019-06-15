@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="en">
+
+	<category name="lexicon.acp.category">
+		<item name="lexicon.acp.category.add"><![CDATA[Add Category]]></item>
+		<item name="lexicon.acp.category.categoryType"><![CDATA[Type]]></item>
+		<item name="lexicon.acp.category.categoryType.category"><![CDATA[Category]]></item>
+		<item name="lexicon.acp.category.categoryType.mainCategory"><![CDATA[Main-Category]]></item>
+		<item name="lexicon.acp.category.edit"><![CDATA[Edit Category]]></item>
+		<item name="lexicon.acp.category.icon"><![CDATA[Icon]]></item>
+		<item name="lexicon.acp.category.icon.description"><![CDATA[Choose an icon here, which should be used for this category.]]></item>
+		<item name="lexicon.acp.category.list"><![CDATA[List Categories]]></item>
+	</category>
+
+	<category name="lexicon.acp.entry">
+		<item name="lexicon.acp.entry.option.access"><![CDATA[Access]]></item>
+		<item name="lexicon.acp.entry.option.add"><![CDATA[Add Custom Field]]></item>
+		<item name="lexicon.acp.entry.option.add.noCategories"><![CDATA[Currently no field categories are available.]]></item>
+		<item name="lexicon.acp.entry.option.availability"><![CDATA[Availability]]></item>
+		<item name="lexicon.acp.entry.option.availability.category"><![CDATA[Categories]]></item>
+		<item name="lexicon.acp.entry.option.availability.noRestriction"><![CDATA[Show fileds in all categories]]></item>
+		<item name="lexicon.acp.entry.option.category.add"><![CDATA[Add Field Category]]></item>
+		<item name="lexicon.acp.entry.option.category.configuration"><![CDATA[Configuration]]></item>
+		<item name="lexicon.acp.entry.option.category.delete.sure"><![CDATA[Do you really want to delete the category „{lang}lexicon.entry.option.category.{$category->categoryName}{/lang}“?{if $category->getItemCount() > 0} Attention: This category contains {if $category->getItemCount() == 1}one field{else}{#$category->getItemCount()} fields{/if}. If you delete this category you will remove the contained fields permanantly!{/if}]]></item>
+		<item name="lexicon.acp.entry.option.category.edit"><![CDATA[Edit Field Category]]></item>
+		<item name="lexicon.acp.entry.option.category.list"><![CDATA[Field Categories]]></item>
+		<item name="lexicon.acp.entry.option.category.options"><![CDATA[Custom Fields]]></item>
+		<item name="lexicon.acp.entry.option.category.showInSidebar"><![CDATA[Show in sidebar]]></item>
+		<item name="lexicon.acp.entry.option.category.showOrder"><![CDATA[Order]]></item>
+		<item name="lexicon.acp.entry.option.categoryName"><![CDATA[Category]]></item>
+		<item name="lexicon.acp.entry.option.defaultValue"><![CDATA[Default]]></item>
+		<item name="lexicon.acp.entry.option.defaultValue.description"><![CDATA[Value that is provided by default.]]></item>
+		<item name="lexicon.acp.entry.option.delete.sure"><![CDATA[Do you really want to delete the field „{lang}lexicon.entry.option.{$option->optionName}{/lang}“?]]></item>
+		<item name="lexicon.acp.entry.option.description"><![CDATA[Description]]></item>
+		<item name="lexicon.acp.entry.option.edit"><![CDATA[Edit Custom Fields]]></item>
+		<item name="lexicon.acp.entry.option.editable"><![CDATA[Editable By]]></item>
+		<item name="lexicon.acp.entry.option.editable.1"><![CDATA[Owner & users with write access]]></item>
+		<item name="lexicon.acp.entry.option.editable.2"><![CDATA[Administrator]]></item>
+		<item name="lexicon.acp.entry.option.editable.3"><![CDATA[Owner, users with write access & Administrator]]></item>
+		<item name="lexicon.acp.entry.option.expertMode"><![CDATA[Expertmode]]></item>
+		<item name="lexicon.acp.entry.option.forceDefaultValue"><![CDATA[Value will be used as preset on first time editing.]]></item>
+		<item name="lexicon.acp.entry.option.list"><![CDATA[Custom Fields]]></item>
+		<item name="lexicon.acp.entry.option.optionType"><![CDATA[Fieldtype]]></item>
+		<item name="lexicon.acp.entry.option.optionType.description"><![CDATA[Option names usually equal the HTML-tag used as input element.]]></item>
+		<item name="lexicon.acp.entry.option.outputClass"><![CDATA[PHP Class Name for Output]]></item>
+		<item name="lexicon.acp.entry.option.outputClass.description"><![CDATA[Allows custom output formatting using a PHP class.]]></item>
+		<item name="lexicon.acp.entry.option.outputClass.error.doesNotExist"><![CDATA[A class with the selected name does not exist.]]></item>
+		<item name="lexicon.acp.entry.option.required"><![CDATA[It is mandatory to fill out this field.]]></item>
+		<item name="lexicon.acp.entry.option.selectOptions"><![CDATA[Select Options]]></item>
+		<item name="lexicon.acp.entry.option.selectOptions.description"><![CDATA[One select option per line, e.g. for use with a select-box.]]></item>
+		<item name="lexicon.acp.entry.option.showOrder"><![CDATA[Order]]></item>
+		<item name="lexicon.acp.entry.option.typeData"><![CDATA[Options]]></item>
+		<item name="lexicon.acp.entry.option.validationPattern"><![CDATA[Regular Expression for Validation]]></item>
+		<item name="lexicon.acp.entry.option.validationPattern.description"><![CDATA[Provide a regular expression to validate user input.]]></item>
+		<item name="lexicon.acp.entry.option.visible"><![CDATA[Visible For]]></item>
+		<item name="lexicon.acp.entry.option.visible.1"><![CDATA[Owner & User with write access]]></item>
+		<item name="lexicon.acp.entry.option.visible.15"><![CDATA[Everybody]]></item>
+		<item name="lexicon.acp.entry.option.visible.2"><![CDATA[Administrator]]></item>
+		<item name="lexicon.acp.entry.option.visible.3"><![CDATA[Owner, User with write access & Administrator]]></item>
+		<item name="lexicon.acp.entry.option.visible.7"><![CDATA[Registered users]]></item>
+	</category>
+
+	<category name="lexicon.acp.index">
+		<item name="lexicon.acp.index.upgrade"><![CDATA[VieCode Lexicon Upgrade]]></item>
+		<item name="lexicon.acp.index.upgrade.description"><![CDATA[You recently have installed the lexicon upgrade version 5.2 . Based on customer feedback the upgrade brings new, innovative and useful features (90% more than initially planned). Normally we would charge an upgrade fee of EUR 15.00, but with this version we want to try a new approach. The upgrade uses a "Pay what you want" option, thus you can decide how much you want to pay for the upgrade.]]></item>
+		<item name="lexicon.acp.index.upgrade.pay"><![CDATA[Buy]]></item>
+		<item name="lexicon.acp.index.upgrade.skip"><![CDATA[I don't want to pay]]></item>
+	</category>
+
+	<category name="lexicon.acp.menu">
+		<item name="lexicon.acp.menu.link.entry.option.add"><![CDATA[Add Custom Field]]></item>
+		<item name="lexicon.acp.menu.link.entry.option.category.add"><![CDATA[Add Field Category]]></item>
+		<item name="lexicon.acp.menu.link.entry.option.category.list"><![CDATA[List Field Categories]]></item>
+		<item name="lexicon.acp.menu.link.entry.option.list"><![CDATA[List Custom Fields]]></item>
+		<item name="lexicon.acp.menu.link.lexicon"><![CDATA[Lexicon]]></item>
+		<item name="lexicon.acp.menu.link.lexicon.category.add"><![CDATA[Add Category]]></item>
+		<item name="lexicon.acp.menu.link.lexicon.category.list"><![CDATA[List Categories]]></item>
+	</category>
+
+	<category name="lexicon.category">
+		<item name="lexicon.category.categories"><![CDATA[Categories]]></item>
+		<item name="lexicon.category.childCategories"><![CDATA[More Categories]]></item>
+		<item name="lexicon.category.markAllAsRead"><![CDATA[Mark All Categories As Read]]></item>
+		<item name="lexicon.category.markAsRead.doubleClick"><![CDATA[Mark Article As Read via Doubleclick]]></item>
+	</category>
+
+	<category name="lexicon.entry">
+		<item name="lexicon.entry.activation.notification.mail"><![CDATA[Your lexicon article "{$entry->subject}" has been approved by a Moderator: {link application='lexicon' controller='Entry' object=$entry encode=false forceFrontend=true}{/link}]]></item>
+		<item name="lexicon.entry.activation.notification.message"><![CDATA[Your lexicon article „{$entry->subject}“ has been approved.]]></item>
+		<item name="lexicon.entry.activation.notification.title"><![CDATA[Acitavtion of your lexicon article]]></item>
+		<item name="lexicon.entry.add"><![CDATA[Add New Article]]></item>
+		<item name="lexicon.entry.button.add"><![CDATA[Add Article]]></item>
+		<item name="lexicon.entry.categories"><![CDATA[Categories]]></item>
+		<item name="lexicon.entry.categories.error.empty"><![CDATA[You must select at least one category!]]></item>
+		<item name="lexicon.entry.categorizedEntries"><![CDATA[Articles of the category „{$category->getTitle()}“]]></item>
+		<item name="lexicon.entry.category"><![CDATA[Category]]></item>
+		<item name="lexicon.entry.change.moderation.redirect"><![CDATA[You change request has been saved. It will be reviewed by a moderator first.]]></item>
+		<item name="lexicon.entry.comment"><![CDATA[Comment]]></item>
+		<item name="lexicon.entry.comment.like.notification.message"><![CDATA[{@$author->getAnchorTag()} likes commonet on the lexicon entry <a href="{link application='lexicon' controller='Entry' object=$entry}#comment{@$commentID}{/link}">{$entry->getTitle()}</a>“.]]></item>
+		<item name="lexicon.entry.comment.like.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} and {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} and {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} and {#$others} others{/if} like your comment on the lexicon entry <a href="{link application='lexicon' controller='Entry' object=$entry}#comment{@$commentID}{/link}">{$entry->getTitle()}</a>.]]></item>
+		<item name="lexicon.entry.comment.like.notification.title"><![CDATA[Likes a comment (lexicon entry)]]></item>
+		<item name="lexicon.entry.comment.like.notification.title.stacked"><![CDATA[{#$count} users like your comment (lexicon entry)]]></item>
+		<item name="lexicon.entry.comment.notification.mail"><![CDATA[{if $author->userID}{@$author->username}{else}a guest{/if} commented on your entry "{@$entry->getTitle()}":
+{if $notificationType == 'instant'}
+---------------------------------
+{@$comment->message}
+---------------------------------
+{/if}{link application='lexicon' controller='Entry' object=$entry isEmail=true}#comment{@$commentID}{/link}]]></item>
+		<item name="lexicon.entry.comment.notification.mail.stacked"><![CDATA[{if $count < 4}{@$authors[0]->username}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} and {else}, {/if}{@$authors[1]->username}{if $count == 3}{if !$guestTimesTriggered} and {else}, {/if} {@$authors[2]->username}{/if}{/if}{if $guestTimesTriggered} and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{else}{@$authors[0]->username}{if $guestTimesTriggered},{else} and{/if} {#$others} other users {if $guestTimesTriggered}and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{/if} commented on your entry "{@$entry->getTitle()}":
+{link application='lexicon' controller='Entry' object=$entry isEmail=true}#comment{@$commentID}{/link}]]></item>
+		<item name="lexicon.entry.comment.notification.message"><![CDATA[{if $author->userID}{@$author->getAnchorTag()}{else}A guest{/if} commented on your entry <a href="{link application='lexicon' controller='Entry' object=$entry}#comment{@$commentID}{/link}">{$entry->getTitle()}</a>.]]></item>
+		<item name="lexicon.entry.comment.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} and {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3}{if !$guestTimesTriggered} and {else}, {/if} {@$authors[2]->getAnchorTag()}{/if}{/if}{if $guestTimesTriggered} and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{else}{@$authors[0]->getAnchorTag()}{if $guestTimesTriggered},{else} and{/if} {#$others} other users {if $guestTimesTriggered}and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{/if} commented on your entry <a href="{link application='lexicon' controller='Entry' object=$entry}#comment{@$commentID}{/link}">{$entry->getTitle()}</a>.]]></item>
+		<item name="lexicon.entry.comment.notification.title"><![CDATA[New Comment (Entry)]]></item>
+		<item name="lexicon.entry.comment.notification.title.stacked"><![CDATA[{#$timesTriggered} new Comments (Entry)]]></item>
+		<item name="lexicon.entry.commentResponse"><![CDATA[Reply to a comment]]></item>
+		<item name="lexicon.entry.commentResponse.like.notification.message"><![CDATA[{@$author->getAnchorTag()} likes your answer on the comment on the lexicon entry <a href="{link application='lexicon' controller='Entry' object=$entry}#comment{@$commentID}/response{@$responseID}{/link}">{$entry->getTitle()}</a>.]]></item>
+		<item name="lexicon.entry.commentResponse.like.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} and {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} and {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} and {#$others} others{/if} like your answer on the comment on the lexicon entry <a href="{link application='lexicon' controller='Entry' object=$entry}#comment{@$commentID}/response{@$responseID}{/link}">{$entry->getTitle()}</a>.]]></item>
+		<item name="lexicon.entry.commentResponse.like.notification.title"><![CDATA[Likes your answer on a comment (lexicon entry)]]></item>
+		<item name="lexicon.entry.commentResponse.like.notification.title.stacked"><![CDATA[{#$count} users like your answer on a comment (lexicon entry))]]></item>
+		<item name="lexicon.entry.commentResponse.notification.mail"><![CDATA[{if $author->userID}{@$author->username}{else}a guest{/if} replied to your comment on the entry "{@$entry->getTitle()}":
+{if $notificationType == 'instant'}
+---------------------------------
+{@$response->message}
+---------------------------------
+{/if}{link application='lexicon' controller='Entry' object=$entry isEmail=true}#comment{@$commentID}/response{@$responseID}{/link}]]></item>
+		<item name="lexicon.entry.commentResponse.notification.mail.stacked"><![CDATA[{if $count < 4}{@$authors[0]->username}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} and {else}, {/if}{@$authors[1]->username}{if $count == 3}{if !$guestTimesTriggered} and {else}, {/if} {@$authors[2]->username}{/if}{/if}{if $guestTimesTriggered} and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{else}{@$authors[0]->username}{if $guestTimesTriggered},{else} and{/if} {#$others} other users {if $guestTimesTriggered}and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{/if} replied to your comment on the entry "{@$entry->getTitle()}":
+{link application='lexicon' controller='Entry' object=$entry isEmail=true}#comment{@$commentID}/response{@$responseID}{/link}]]></item>
+		<item name="lexicon.entry.commentResponse.notification.message"><![CDATA[{if $author->userID}{@$author->getAnchorTag()}{else}A guest{/if} replied to your comment on the entry <a href="{link application='lexicon' controller='Entry' object=$entry}#comment{@$commentID}{/link}">{$entry->getTitle()}</a>.]]></item>
+		<item name="lexicon.entry.commentResponse.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} and {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3}{if !$guestTimesTriggered} and {else}, {/if} {@$authors[2]->getAnchorTag()}{/if}{/if}{if $guestTimesTriggered} and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{else}{@$authors[0]->getAnchorTag()}{if $guestTimesTriggered},{else} and{/if} {#$others} other users {if $guestTimesTriggered}and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{/if} replied to your comment on the entry <a href="{link application='lexicon' controller='Entry' object=$entry}#comment{@$commentID}/response{@$responseID}{/link}">{$entry->getTitle()}</a>.]]></item>
+		<item name="lexicon.entry.commentResponse.notification.title"><![CDATA[New Reply (Entry)]]></item>
+		<item name="lexicon.entry.commentResponse.notification.title.stacked"><![CDATA[{#$timesTriggered} new Replies (Entry)]]></item>
+		<item name="lexicon.entry.commentResponseOwner.notification.mail"><![CDATA[{if $author->userID}{@$author->username}{else}a guest{/if} replied to a comment by "{@$commentAuthor->username}" on your entry "{@$entry->getTitle()}":
+{if $notificationType == 'instant'}
+---------------------------------
+{@$response->message}
+---------------------------------
+{/if}{link application='lexicon' controller='Entry' object=$entry isEmail=true}#comment{@$commentID}/response{@$responseID}{/link}]]></item>
+		<item name="lexicon.entry.commentResponseOwner.notification.mail.stacked"><![CDATA[{if $count < 4}{@$authors[0]->username}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} and {else}, {/if}{@$authors[1]->username}{if $count == 3}{if !$guestTimesTriggered} and {else}, {/if} {@$authors[2]->username}{/if}{/if}{if $guestTimesTriggered} and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{else}{@$authors[0]->username}{if $guestTimesTriggered},{else} and{/if} {#$others} other users {if $guestTimesTriggered}and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{/if} replied to a comment by "{@$commentAuthor->username}" on your entry "{@$entry->getTitle()}":
+{link application='lexicon' controller='Entry' object=$entry isEmail=true}#comment{@$commentID}/response{@$responseID}{/link}]]></item>
+		<item name="lexicon.entry.commentResponseOwner.notification.message"><![CDATA[{if $author->userID}{@$author->getAnchorTag()}{else}A guest{/if} replied to a comment by {$commentAuthor->username} on your entry <a href="{link application='lexicon' controller='Entry' object=$entry}#comment{@$commentID}/response{@$responseID}{/link}">{$entry->getTitle()}</a>.]]></item>
+		<item name="lexicon.entry.commentResponseOwner.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count != 1}{if $count == 2 && !$guestTimesTriggered} and {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3}{if !$guestTimesTriggered} and {else}, {/if} {@$authors[2]->getAnchorTag()}{/if}{/if}{if $guestTimesTriggered} and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{else}{@$authors[0]->getAnchorTag()}{if $guestTimesTriggered},{else} and{/if} {#$others} other users {if $guestTimesTriggered}and {if $guestTimesTriggered == 1}a guest{else}guests{/if}{/if}{/if} replied to a comment by {if $author->userID}<a href="{link controller='User' object=$author}{/link}" class="userLink" data-user-id="{@$author->userID}">{$author->username}</a>{else}{$author->username}{/if} on your entry <a href="{link application='lexicon' controller='Entry' object=$entry}#comment{@$commentID}/response{@$responseID}{/link}">{$entry->getTitle()}</a>.]]></item>
+		<item name="lexicon.entry.commentResponseOwner.notification.title"><![CDATA[New Reply (Entry)]]></item>
+		<item name="lexicon.entry.commentResponseOwner.notification.title.stacked"><![CDATA[{#$timesTriggered} new Replies (Entry)]]></item>
+		<item name="lexicon.entry.comments"><![CDATA[Comments]]></item>
+		<item name="lexicon.entry.comments.count"><![CDATA[{#$entry->comments} comment{if $entry->comments != 1}s{/if}]]></item>
+		<item name="lexicon.entry.completed"><![CDATA[Article is protected against edits]]></item>
+		<item name="lexicon.entry.condition.comments"><![CDATA[Comments]]></item>
+		<item name="lexicon.entry.condition.timeFrame"><![CDATA[Time]]></item>
+		<item name="lexicon.entry.delete"><![CDATA[Delete entry]]></item>
+		<item name="lexicon.entry.delete.confirmMessage"><![CDATA[Do you really want to delete this entry?]]></item>
+		<item name="lexicon.entry.delete.success"><![CDATA[The article has been deleted.]]></item>
+		<item name="lexicon.entry.detectLexiconEntries"><![CDATA[Recognize lexicon articles automatically]]></item>
+		<item name="lexicon.entry.detectLexiconEntries.description"><![CDATA[Lexicon articles will be linked automatically.]]></item>
+		<item name="lexicon.entry.disabled"><![CDATA[This entry is deactivated and waiting for activation through a moderator.]]></item>
+		<item name="lexicon.entry.edit"><![CDATA[Edit Article]]></item>
+		<item name="lexicon.entry.edit.advanced"><![CDATA[More Options]]></item>
+		<item name="lexicon.entry.edit.assignLabel"><![CDATA[Assign label]]></item>
+		<item name="lexicon.entry.edit.comment"><![CDATA[Change Comment]]></item>
+		<item name="lexicon.entry.edit.comments.disable"><![CDATA[Disable Comments]]></item>
+		<item name="lexicon.entry.edit.comments.enable"><![CDATA[Approve Comments]]></item>
+		<item name="lexicon.entry.edit.disable"><![CDATA[Disable Article]]></item>
+		<item name="lexicon.entry.edit.done"><![CDATA[Lock Article]]></item>
+		<item name="lexicon.entry.edit.enable"><![CDATA[Approve Article]]></item>
+		<item name="lexicon.entry.edit.notification.mail"><![CDATA[{@$author->username} has updated the article "{@$entry->subject}": {link application='lexicon' controller='Entry' object=$entry encode=false forceFrontend=true}{/link}]]></item>
+		<item name="lexicon.entry.edit.notification.message"><![CDATA[has updated the article „{$entry->subject}“.]]></item>
+		<item name="lexicon.entry.edit.notification.title"><![CDATA[Lexicon article updated]]></item>
+		<item name="lexicon.entry.edit.quick"><![CDATA[Moderation]]></item>
+		<item name="lexicon.entry.edit.undone"><![CDATA[Unlock Article]]></item>
+		<item name="lexicon.entry.enableComments"><![CDATA[Enable Comments]]></item>
+		<item name="lexicon.entry.enableComments.description"><![CDATA[Allow other users to comment this article.]]></item>
+		<item name="lexicon.entry.entries"><![CDATA[Lexicon Articles]]></item>
+		<item name="lexicon.entry.excerpt"><![CDATA[Abstract]]></item>
+		<item name="lexicon.entry.information"><![CDATA[General]]></item>
+		<item name="lexicon.entry.information.lastEditTime"><![CDATA[Last edit]]></item>
+		<item name="lexicon.entry.information.time"><![CDATA[Created]]></item>
+		<item name="lexicon.entry.information.views"><![CDATA[Views]]></item>
+		<item name="lexicon.entry.internationalVersions"><![CDATA[Languages]]></item>
+		<item name="lexicon.entry.internationalVersions.error.alreadyLinked"><![CDATA[This article is already linked to another one. You need to delete the other link first!]]></item>
+		<item name="lexicon.entry.internationalVersions.error.notFound"><![CDATA[There is no lexicon article in this language!]]></item>
+		<item name="lexicon.entry.ipAddress"><![CDATA[IP: {$entry->getIpAddress()}]]></item>
+		<item name="lexicon.entry.ipAddress.author"><![CDATA[Other IP address for „{$entry->username}“]]></item>
+		<item name="lexicon.entry.ipAddress.entry"><![CDATA[IP address for „{$entry->username}“]]></item>
+		<item name="lexicon.entry.ipAddress.hostname"><![CDATA[Hostname]]></item>
+		<item name="lexicon.entry.ipAddress.otherUsers"><![CDATA[Other Users for IP address „{$entry->getIpAddress()}“]]></item>
+		<item name="lexicon.entry.ipAddress.registration"><![CDATA[IP address (Registration):]]></item>
+		<item name="lexicon.entry.ipAddress.title"><![CDATA[IP Address]]></item>
+		<item name="lexicon.entry.isLinkedByParser"><![CDATA[Link Entry]]></item>
+		<item name="lexicon.entry.isLinkedByParser.description"><![CDATA[Activates the automatic linkage of this entry in other entries.]]></item>
+		<item name="lexicon.entry.label.reference"><![CDATA[Reference]]></item>
+		<item name="lexicon.entry.labeledEntries"><![CDATA[Entries assigned with label “{$label->label|language}”]]></item>
+		<item name="lexicon.entry.like.notification.message"><![CDATA[{@$author->getAnchorTag()} likes your lexicon entry <a href="{link application='lexicon' controller='Entry' object=$entry}{/link}">{$entry->getTitle()}</a>.]]></item>
+		<item name="lexicon.entry.like.notification.message.stacked"><![CDATA[{if $count < 4}{@$authors[0]->getAnchorTag()}{if $count == 2} and {else}, {/if}{@$authors[1]->getAnchorTag()}{if $count == 3} and {@$authors[2]->getAnchorTag()}{/if}{else}{@$authors[0]->getAnchorTag()} and {#$others} others{/if} like your lexicon entry <a href="{link application='lexicon' controller='Entry' object=$entry}{/link}">{$entry->getTitle()}</a>.]]></item>
+		<item name="lexicon.entry.like.notification.title"><![CDATA[Likes your lexicon entry]]></item>
+		<item name="lexicon.entry.like.notification.title.stacked"><![CDATA[{#$count} users like your lexicon entry]]></item>
+		<item name="lexicon.entry.listEntries"><![CDATA[Entries]]></item>
+		<item name="lexicon.entry.markAllAsRead"><![CDATA[Mark all as read]]></item>
+		<item name="lexicon.entry.message"><![CDATA[Description]]></item>
+		<item name="lexicon.entry.moderation.info"><![CDATA[A moderator has to review your article first. When the review is passed it will be visible for all lexicon users.]]></item>
+		<item name="lexicon.entry.moderation.redirect"><![CDATA[You article has been saved. It will be reviewed by a moderator first.]]></item>
+		<item name="lexicon.entry.moreEntries"><![CDATA[More Articles by this user]]></item>
+		<item name="lexicon.entry.moreEntries.all"><![CDATA[All Articles]]></item>
+		<item name="lexicon.entry.nextEntry"><![CDATA[Next entry]]></item>
+		<item name="lexicon.entry.noComments"><![CDATA[Currently there are no comments available for this article.]]></item>
+		<item name="lexicon.entry.noEntries"><![CDATA[No articles matched your search.]]></item>
+		<item name="lexicon.entry.notification.mail"><![CDATA[{@$author->username} has added the lexicon article "{$entry->subject}": {link application='lexicon' controller='Entry' object=$entry encode=false forceFrontend=true}{/link}]]></item>
+		<item name="lexicon.entry.notification.message"><![CDATA[Has added the lexicon article "{$entry->subject}".]]></item>
+		<item name="lexicon.entry.notification.title"><![CDATA[New Lexicon Article]]></item>
+		<item name="lexicon.entry.pdfExport"><![CDATA[PDF]]></item>
+		<item name="lexicon.entry.previousEntry"><![CDATA[Previous entry]]></item>
+		<item name="lexicon.entry.recentActivity.entry"><![CDATA[Has added the article <a href="{link application='lexicon' controller='Entry' object=$entry}{/link}" class="lexiconEntryLink" data-entry-id="{@$entry->entryID}">{$entry->subject}</a> to the lexicon.]]></item>
+		<item name="lexicon.entry.recentActivity.entryComment"><![CDATA[Has added a comment to <a href="{link application='lexicon' controller='Entry' object=$entry}{/link}#comment{@$commentID}" class="lexiconEntryLink" data-entry-id="{@$entry->entryID}">{$entry->subject}</a> on the lexicon.]]></item>
+		<item name="lexicon.entry.recentActivity.entryCommentResponse"><![CDATA[Has replied to <a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>s' lexicon article <a href="{link application='lexicon' controller='Entry' object=$entry}{/link}#comment{@$commentID}/response{@$responseID}" class="lexiconEntryLink" data-entry-id="{@$entry->entryID}">{$entry->subject}</a>.]]></item>
+		<item name="lexicon.entry.recentActivity.likedEntry"><![CDATA[Likes the article <a href="{link application='lexicon' controller='Entry' object=$entry}{/link}" class="lexiconEntryLink" data-entry-id="{@$entry->entryID}">{$entry->subject}</a> on the lexicon.]]></item>
+		<item name="lexicon.entry.references"><![CDATA[(templates) lexicon.entry.references]]></item>
+		<item name="lexicon.entry.restrictedWriteAccess"><![CDATA[Restrict write access]]></item>
+		<item name="lexicon.entry.restrictedWriteAccess.description"><![CDATA[You can restrict the write access to certain users. You can add mutliple users here by separating them with a comma.]]></item>
+		<item name="lexicon.entry.restrictedWriteAccess.error.duplicate"><![CDATA[At least one username was added twice.]]></item>
+		<item name="lexicon.entry.restrictedWriteAccess.error.missingMyself"><![CDATA[You have to add yourself, otherwise you would not have access to this article any more.]]></item>
+		<item name="lexicon.entry.restrictedWriteAccess.error.notFound"><![CDATA[User „{$username}“ does not exists.]]></item>
+		<item name="lexicon.entry.searchEntries"><![CDATA[Search Lexicon]]></item>
+		<item name="lexicon.entry.share.bbcode"><![CDATA[BBCode]]></item>
+		<item name="lexicon.entry.sortField.comments"><![CDATA[Comments]]></item>
+		<item name="lexicon.entry.sortField.cumulativeLikes"><![CDATA[Likes]]></item>
+		<item name="lexicon.entry.sortField.lastEditTime"><![CDATA[Last edit time]]></item>
+		<item name="lexicon.entry.sortField.subject"><![CDATA[Subject]]></item>
+		<item name="lexicon.entry.sortField.time"><![CDATA[Time]]></item>
+		<item name="lexicon.entry.sortField.views"><![CDATA[Views]]></item>
+		<item name="lexicon.entry.subject.error.alreadyExists"><![CDATA[An article with this title already exists.]]></item>
+		<item name="lexicon.entry.synonym"><![CDATA[Forwared from „{$synonym->subject}“]]></item>
+		<item name="lexicon.entry.synonyms"><![CDATA[Synonyms]]></item>
+		<item name="lexicon.entry.synonyms.description"><![CDATA[If you want to use more synonyms seperate them with a coma.]]></item>
+		<item name="lexicon.entry.synonyms.error.duplicates"><![CDATA[The synonym „{$synonym}“ is already used in a different entry or is the name of an entry.]]></item>
+		<item name="lexicon.entry.toc"><![CDATA[Table Of Contents]]></item>
+		<item name="lexicon.entry.unreadEntries"><![CDATA[New Articles]]></item>
+		<item name="lexicon.entry.userEntries"><![CDATA[Find All Articles By „{$user->username}“]]></item>
+		<item name="lexicon.entry.userEntryCounter"><![CDATA[{#$activeAuthor->lexiconEntries} {if $activeAuthor->lexiconEntries == 1}entry{else}entries{/if}]]></item>
+		<item name="lexicon.entry.views.count"><![CDATA[{#$entry->views} times viewed]]></item>
+		<item name="lexicon.entry.watchedEntries"><![CDATA[Watched Articles]]></item>
+		<item name="lexicon.entry.watchedEntries.noEntries"><![CDATA[You are currently not watching any article.]]></item>
+	</category>
+
+	<category name="lexicon.entry.changes">
+		<item name="lexicon.entry.changes.compare"><![CDATA[Compare Versions]]></item>
+		<item name="lexicon.entry.changes.event.created"><![CDATA[Article Created]]></item>
+		<item name="lexicon.entry.changes.event.restored"><![CDATA[Article Recovered]]></item>
+		<item name="lexicon.entry.changes.info"><![CDATA[You are currently viewing an older version of the article. Click <a href="{link controller='Entry' application='lexicon' object=$entry}{/link}">here</a>, to view the current version.]]></item>
+		<item name="lexicon.entry.changes.list"><![CDATA[Changes]]></item>
+		<item name="lexicon.entry.changes.list.comment"><![CDATA[Remarks]]></item>
+		<item name="lexicon.entry.changes.list.empty"><![CDATA[Currently no changes have been recorded.]]></item>
+		<item name="lexicon.entry.changes.list.restore"><![CDATA[Recover Version]]></item>
+		<item name="lexicon.entry.changes.list.restore.confirm"><![CDATA[Do you really want to recover this version?]]></item>
+		<item name="lexicon.entry.changes.list.time"><![CDATA[Date]]></item>
+		<item name="lexicon.entry.changes.list.user"><![CDATA[User]]></item>
+		<item name="lexicon.entry.changes.list.view"><![CDATA[Display Version]]></item>
+		<item name="lexicon.entry.changes.log"><![CDATA[Changelog]]></item>
+	</category>
+
+	<category name="lexicon.entry.option">
+		<item name="lexicon.entry.option.default"><![CDATA[]]></item>
+	</category>
+
+	<category name="lexicon.global">
+		<item name="lexicon.global.copyright"><![CDATA[<a href="http://www.viecode.com"><strong>Lexicon{if SHOW_VERSION_NUMBER} {@PACKAGE_VERSION}{/if}</strong>, developed by <strong>www.viecode.com</strong></a>]]></item>
+	</category>
+
+	<category name="lexicon.header">
+		<item name="lexicon.header.menu.lexicon"><![CDATA[Lexicon]]></item>
+		<item name="lexicon.header.menu.terms"><![CDATA[Terms Of Condition]]></item>
+		<item name="lexicon.header.menu.unreadEntries"><![CDATA[Unread Articles]]></item>
+		<item name="lexicon.header.menu.watchedEntries"><![CDATA[Watched Articles]]></item>
+	</category>
+
+	<category name="lexicon.index">
+		<item name="lexicon.index.letter.continue"><![CDATA[Sequel]]></item>
+		<item name="lexicon.index.stats"><![CDATA[Statistics]]></item>
+		<item name="lexicon.index.stats.detail"><![CDATA[{#$stats[entries]} article{if $stats[entries] != 1}s{/if} ({#$stats[entriesPerDay]} article{if $stats[entriesPerDay] != 1}s{/if} / day) - {#$stats[comments]} Comment{if $stats[comments] != 1}s{/if}]]></item>
+	</category>
+
+	<category name="lexicon.terms">
+		<item name="lexicon.terms.accept"><![CDATA[Accept Terms Of Condition]]></item>
+		<item name="lexicon.terms.accept.info"><![CDATA[You have accepted the terms of condition on {@$lexiconTermsAcceptTime|time}.]]></item>
+		<item name="lexicon.terms.info"><![CDATA[It is necessary to accept the terms in order to proceed!]]></item>
+	</category>
+
+	<category name="lexicon.user">
+		<item name="lexicon.user.usersOnline.location.EntryAddForm"><![CDATA[Adding a lexicon article]]></item>
+		<item name="lexicon.user.usersOnline.location.EntryEditForm"><![CDATA[Editing lexicon article <a href="{link controller='Entry' application='lexicon' object=$entry}{/link}" class="lexiconEntryLink" data-entry-id="{@$entry->entryID}">{$entry->subject}</a>]]></item>
+		<item name="lexicon.user.usersOnline.location.EntryListPage.categorizedEntries"><![CDATA[<a href="{link controller='EntryList' application='lexicon' object=$category}{/link}">lexicon articles in category „{$category->getTitle()}“</a>]]></item>
+		<item name="lexicon.user.usersOnline.location.EntryListPage.userEntries"><![CDATA[<a href="{link controller='EntryList' application='lexicon'}userID={@$user->userID}{/link}">lexicon articles by „{$user->username}“</a>]]></item>
+		<item name="lexicon.user.usersOnline.location.EntryPage"><![CDATA[<a href="{link controller='Entry' application='lexicon' object=$entry}{/link}" class="lexiconEntryLink" data-entry-id="{@$entry->entryID}">lexicon article „{$entry->subject}“</a>]]></item>
+		<item name="lexicon.user.usersOnline.location.LexiconPage"><![CDATA[Lexicon]]></item>
+	</category>
+
+	<category name="wcf.acl.option">
+		<item name="wcf.acl.option.com.viecode.lexicon.category.canCreateEntry"><![CDATA[Can add articles]]></item>
+		<item name="wcf.acl.option.com.viecode.lexicon.category.canCreateEntryWithoutModeration"><![CDATA[Can add articles without moderation]]></item>
+		<item name="wcf.acl.option.com.viecode.lexicon.category.canEditEntryWithoutModeration"><![CDATA[Can edit articles without moderation]]></item>
+		<item name="wcf.acl.option.com.viecode.lexicon.category.canEnterCategory"><![CDATA[Can enter category]]></item>
+		<item name="wcf.acl.option.com.viecode.lexicon.category.canUseCategory"><![CDATA[Can use category]]></item>
+		<item name="wcf.acl.option.com.viecode.lexicon.category.canViewCategory"><![CDATA[Can view category]]></item>
+	</category>
+
+	<category name="wcf.acp.ad">
+		<item name="wcf.acp.ad.location.category.com.viecode.lexicon.entry"><![CDATA[Lexicon]]></item>
+		<item name="wcf.acp.ad.location.com.viecode.lexicon.entry.inEntryMessage"><![CDATA[In the entry message]]></item>
+	</category>
+
+	<category name="wcf.acp.box">
+		<item name="wcf.acp.box.boxController.com.viecode.lexicon.categories"><![CDATA[Lexicon-Categories]]></item>
+		<item name="wcf.acp.box.boxController.com.viecode.lexicon.commentList"><![CDATA[Lexicon-Comments]]></item>
+		<item name="wcf.acp.box.boxController.com.viecode.lexicon.entryList"><![CDATA[Lexicon-Entries]]></item>
+		<item name="wcf.acp.box.boxController.com.viecode.lexicon.entryTableOfContents"><![CDATA[Lexicon Table of Contents]]></item>
+		<item name="wcf.acp.box.boxController.com.viecode.lexicon.mostActiveAuthors"><![CDATA[Most active authors]]></item>
+		<item name="wcf.acp.box.boxController.com.viecode.lexicon.tagCloud"><![CDATA[Lexicon-Tags]]></item>
+	</category>
+
+	<category name="wcf.acp.dataImport">
+		<item name="wcf.acp.dataImport.data.com.viecode.lexicon.attachment"><![CDATA[Attachments]]></item>
+		<item name="wcf.acp.dataImport.data.com.viecode.lexicon.category"><![CDATA[Categories]]></item>
+		<item name="wcf.acp.dataImport.data.com.viecode.lexicon.comment"><![CDATA[Discussions]]></item>
+		<item name="wcf.acp.dataImport.data.com.viecode.lexicon.entry"><![CDATA[Articles]]></item>
+		<item name="wcf.acp.dataImport.data.com.viecode.lexicon.history"><![CDATA[History]]></item>
+		<item name="wcf.acp.dataImport.data.com.viecode.lexicon.lexicon"><![CDATA[Lexicons]]></item>
+		<item name="wcf.acp.dataImport.data.com.viecode.lexicon.like"><![CDATA[Likes]]></item>
+		<item name="wcf.acp.dataImport.data.com.viecode.lexicon.option"><![CDATA[Custom fields]]></item>
+		<item name="wcf.acp.dataImport.data.com.viecode.lexicon.option.category"><![CDATA[Custom field categories]]></item>
+	</category>
+
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.admin.lexicon.canManageCategory"><![CDATA[Can manage categories]]></item>
+		<item name="wcf.acp.group.option.admin.lexicon.canManageEntryOption"><![CDATA[Can manage custom fields]]></item>
+		<item name="wcf.acp.group.option.admin.lexicon.canViewPrivateEntryOptions"><![CDATA[KCan view content of private fields]]></item>
+		<item name="wcf.acp.group.option.category.admin.lexicon"><![CDATA[Lexicon]]></item>
+		<item name="wcf.acp.group.option.category.mod.lexicon"><![CDATA[Lexicon]]></item>
+		<item name="wcf.acp.group.option.category.user.lexicon"><![CDATA[Lexicon]]></item>
+		<item name="wcf.acp.group.option.mod.lexicon.canDeleteComment"><![CDATA[Can delete comments]]></item>
+		<item name="wcf.acp.group.option.mod.lexicon.canDeleteEntry"><![CDATA[Can delete articles]]></item>
+		<item name="wcf.acp.group.option.mod.lexicon.canEditComment"><![CDATA[Can edit comments]]></item>
+		<item name="wcf.acp.group.option.mod.lexicon.canEditEntry"><![CDATA[Can edit articles]]></item>
+		<item name="wcf.acp.group.option.mod.lexicon.canModerateComment"><![CDATA[Can approve comments]]></item>
+		<item name="wcf.acp.group.option.mod.lexicon.canModerateEntry"><![CDATA[Can approve articles]]></item>
+		<item name="wcf.acp.group.option.mod.lexicon.canOverruleRestrictions"><![CDATA[Can overrule restrictions]]></item>
+		<item name="wcf.acp.group.option.mod.lexicon.canRestoreEntry"><![CDATA[Can recover articles]]></item>
+		<item name="wcf.acp.group.option.user.lexicon.canAddComment"><![CDATA[Can add comments]]></item>
+		<item name="wcf.acp.group.option.user.lexicon.canAddCommentWithoutModeration"><![CDATA[Can create comments without approval]]></item>
+		<item name="wcf.acp.group.option.user.lexicon.canCreateEntry"><![CDATA[Can add articles]]></item>
+		<item name="wcf.acp.group.option.user.lexicon.canCreateEntryWithoutModeration"><![CDATA[Can add articles without moderation]]></item>
+		<item name="wcf.acp.group.option.user.lexicon.canDeleteComment"><![CDATA[Can delete own commenets]]></item>
+		<item name="wcf.acp.group.option.user.lexicon.canDeleteEntry"><![CDATA[Can delete own articles]]></item>
+		<item name="wcf.acp.group.option.user.lexicon.canDisableCommentFunction"><![CDATA[Can disable comments]]></item>
+		<item name="wcf.acp.group.option.user.lexicon.canDownloadAttachment"><![CDATA[Can download attachements]]></item>
+		<item name="wcf.acp.group.option.user.lexicon.canEditComment"><![CDATA[Can edit own comments]]></item>
+		<item name="wcf.acp.group.option.user.lexicon.canEditEntry"><![CDATA[Can edit own articles]]></item>
+		<item name="wcf.acp.group.option.user.lexicon.canEditEntryOfOthers"><![CDATA[Can edit articles of other users]]></item>
+		<item name="wcf.acp.group.option.user.lexicon.canEditEntryWithoutModeration"><![CDATA[Can edit articles without moderation]]></item>
+		<item name="wcf.acp.group.option.user.lexicon.canEnterLexicon"><![CDATA[Can enter lexicon]]></item>
+		<item name="wcf.acp.group.option.user.lexicon.canReadEntry"><![CDATA[Can view articles]]></item>
+		<item name="wcf.acp.group.option.user.lexicon.canSetRestrictions"><![CDATA[Can set restrictions]]></item>
+		<item name="wcf.acp.group.option.user.lexicon.canUploadAttachment"><![CDATA[Can upload attachments]]></item>
+		<item name="wcf.acp.group.option.user.lexicon.canViewAttachmentPreview"><![CDATA[Can see attachment previews]]></item>
+		<item name="wcf.acp.group.option.user.lexicon.canViewHistory"><![CDATA[Can view changelog]]></item>
+	</category>
+
+	<category name="wcf.acp.index">
+		<item name="wcf.acp.index.system.software.lexiconVersion"><![CDATA[VieCode Lexicon Version]]></item>
+	</category>
+
+	<category name="wcf.acp.label">
+		<item name="wcf.acp.label.container.com.viecode.lexicon.category"><![CDATA[Lexicon]]></item>
+	</category>
+
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.lexicon"><![CDATA[Lexicon]]></item>
+		<item name="wcf.acp.option.category.lexicon.advanced"><![CDATA[Advanced]]></item>
+		<item name="wcf.acp.option.category.lexicon.advanced.parser"><![CDATA[Parser Configuration]]></item>
+		<item name="wcf.acp.option.category.lexicon.advanced.pdf"><![CDATA[PDF Export]]></item>
+		<item name="wcf.acp.option.category.lexicon.entry"><![CDATA[Articles]]></item>
+		<item name="wcf.acp.option.category.lexicon.entry.general"><![CDATA[General]]></item>
+		<item name="wcf.acp.option.category.lexicon.entry.toc"><![CDATA[Table of Contents]]></item>
+		<item name="wcf.acp.option.category.lexicon.index"><![CDATA[Overview]]></item>
+		<item name="wcf.acp.option.category.lexicon.index.entries"><![CDATA[Articlelist]]></item>
+		<item name="wcf.acp.option.category.lexicon.index.general"><![CDATA[General]]></item>
+		<item name="wcf.acp.option.category.lexicon.index.terms"><![CDATA[Terms Of Condition]]></item>
+		<item name="wcf.acp.option.lexicon_allow_multiple_category_entry"><![CDATA[Allow multiple categories per article]]></item>
+		<item name="wcf.acp.option.lexicon_autodetect_entries"><![CDATA[Detect lexicon entries in posts and automatically link them.]]></item>
+		<item name="wcf.acp.option.lexicon_dashboard_box_latest_entries"><![CDATA[Articles On Dashboard]]></item>
+		<item name="wcf.acp.option.lexicon_dashboard_box_latest_entries.description"><![CDATA[Number of articles that should be displayed on the dashboard]]></item>
+		<item name="wcf.acp.option.lexicon_enable_excerpt"><![CDATA[Enable excerpts]]></item>
+		<item name="wcf.acp.option.lexicon_enable_excerpt.description"><![CDATA[If you disable this option the excerpt field will be removed. The lexicon will use the beginning of the article as short description instead.]]></item>
+		<item name="wcf.acp.option.lexicon_enable_excerpt_bbcodes"><![CDATA[Enable BBCodes in excerpt section]]></item>
+		<item name="wcf.acp.option.lexicon_entries_per_page"><![CDATA[Articles Per Page]]></item>
+		<item name="wcf.acp.option.lexicon_entry_pdf_export"><![CDATA[Enable PDF exports of entries]]></item>
+		<item name="wcf.acp.option.lexicon_entry_sidebar_items"><![CDATA[Articles On Sidebar]]></item>
+		<item name="wcf.acp.option.lexicon_entry_sidebar_items.description"><![CDATA[Number of articles that should be displayed within the sidebar]]></item>
+		<item name="wcf.acp.option.lexicon_excerpt_length"><![CDATA[Maximum Preview-Characters]]></item>
+		<item name="wcf.acp.option.lexicon_excerpt_length.description"><![CDATA[Number of characters that should be displayed in the Preview (Excerpt).]]></item>
+		<item name="wcf.acp.option.lexicon_force_open_category"><![CDATA[Open category tree in sidebar]]></item>
+		<item name="wcf.acp.option.lexicon_index_alphabet"><![CDATA[Grouping]]></item>
+		<item name="wcf.acp.option.lexicon_index_alphabet.description"><![CDATA[All entries are grouped by their first charachters. You can define which letters should be used for grouping and their sorting. You can define multiple groups by separating them by a comma. If you leave this field empty the entries will not be grouped by their starting letter.]]></item>
+		<item name="wcf.acp.option.lexicon_index_alphabet_unknown"><![CDATA[Character for undefined groups]]></item>
+		<item name="wcf.acp.option.lexicon_index_alphabet_unknown.description"><![CDATA[You can define a letter that should be used for entries that cannot be assigned to a group, i.e. the starting charachters are not defined.]]></item>
+		<item name="wcf.acp.option.lexicon_index_columns"><![CDATA[Column count]]></item>
+		<item name="wcf.acp.option.lexicon_index_enable_categories"><![CDATA[Display categories on the lexicon main page]]></item>
+		<item name="wcf.acp.option.lexicon_index_enable_language_flag"><![CDATA[Display article language as flag-icon]]></item>
+		<item name="wcf.acp.option.lexicon_index_enable_stats"><![CDATA[Display statistics]]></item>
+		<item name="wcf.acp.option.lexicon_index_enable_user_online"><![CDATA[Display "who is online" list on the startpage]]></item>
+		<item name="wcf.acp.option.lexicon_index_list_entries"><![CDATA[Display articles on the main page]]></item>
+		<item name="wcf.acp.option.lexicon_install_date"><![CDATA[Installation Date]]></item>
+		<item name="wcf.acp.option.lexicon_just_in_time_parser"><![CDATA[Link entries during runtime]]></item>
+		<item name="wcf.acp.option.lexicon_just_in_time_parser.description"><![CDATA[This option enables the automatic linking during runtime, i.e. this option enables an up to date link to the lexicon entries. However this option can cause performance issues in larger installations.]]></item>
+		<item name="wcf.acp.option.lexicon_list_entries_of_subcategories"><![CDATA[List articles also in child categories]]></item>
+		<item name="wcf.acp.option.lexicon_message_sidebar_enable_user_entries"><![CDATA[Show number of articles a user has added]]></item>
+		<item name="wcf.acp.option.lexicon_parser_avoid_bbcode"><![CDATA[Avoid lexicon bbcode (messages does not get altered by the lexicon)]]></item>
+		<item name="wcf.acp.option.lexicon_parser_blacklist_bbcode"><![CDATA[Protect BBCodes]]></item>
+		<item name="wcf.acp.option.lexicon_parser_blacklist_bbcode.description"><![CDATA[Enter here all BBCodes which should be protected from the lexicon parser. You can enter multiple BBCodes by separating them with a comma.]]></item>
+		<item name="wcf.acp.option.lexicon_parser_blacklist_html"><![CDATA[Protect HTML tags]]></item>
+		<item name="wcf.acp.option.lexicon_parser_blacklist_html.description"><![CDATA[Enter here all HTML tags which should be protected from the lexicon parser. You can enter multiple html tags by separating them with a comma. Use this function only if you know what you are doing, because it can have negative side effects.]]></item>
+		<item name="wcf.acp.option.lexicon_parser_blacklist_regex"><![CDATA[Regular expressions]]></item>
+		<item name="wcf.acp.option.lexicon_parser_blacklist_regex.description"><![CDATA[Enter here any regular expressions that protected matched text from the lexicon parser. Enter one regular expression per line. Be aware that there is no syntax validation! Use this function only if you know what you are doing, because it can have negative side effects.]]></item>
+		<item name="wcf.acp.option.lexicon_parser_case_sensitive"><![CDATA[Entry detection is not case sensitive]]></item>
+		<item name="wcf.acp.option.lexicon_parser_enable"><![CDATA[Enable automatic entry detection]]></item>
+		<item name="wcf.acp.option.lexicon_parser_limit_detection"><![CDATA[Limit detection rate]]></item>
+		<item name="wcf.acp.option.lexicon_parser_limit_detection.description"><![CDATA[You can enter here how often the same entry should be detected within the same entry. Use 0 if you don't want to limit the detection at all.]]></item>
+		<item name="wcf.acp.option.lexicon_parser_remove_during_turn"><![CDATA[Remove links complete and set them again during every turn]]></item>
+		<item name="wcf.acp.option.lexicon_pdf_individual_css"><![CDATA[Individual CSS]]></item>
+		<item name="wcf.acp.option.lexicon_pdf_individual_css.description"><![CDATA[Enter here individual CSS code that will be used during the pdf export.]]></item>
+		<item name="wcf.acp.option.lexicon_tag_cloud_tags"><![CDATA[Number Of Articles In Tag Cloud]]></item>
+		<item name="wcf.acp.option.lexicon_terms_text"><![CDATA[Terms Of Condition]]></item>
+		<item name="wcf.acp.option.lexicon_terms_use_html"><![CDATA[Use HTML code in terms of condition]]></item>
+		<item name="wcf.acp.option.lexicon_terms_use_html.description"><![CDATA[Use this option if you want to use HTML code in your terms of condition.]]></item>
+		<item name="wcf.acp.option.lexicon_toc_prefix"><![CDATA[Prefix]]></item>
+		<item name="wcf.acp.option.lexicon_toc_separator"><![CDATA[Separator]]></item>
+		<item name="wcf.acp.option.lexicon_toc_style"><![CDATA[Style]]></item>
+		<item name="wcf.acp.option.lexicon_toc_suffix"><![CDATA[Suffix]]></item>
+		<item name="wcf.acp.option.lexicon_use_headlines_in_toc"><![CDATA[Detect HTML-headlines in addition to BBCode- and wiki-style headlines in table of contents]]></item>
+		<item name="wcf.acp.option.lexicon_use_terms"><![CDATA[Enable terms of condition]]></item>
+		<item name="wcf.acp.option.lexicon_user_profile_enable_user_entries"><![CDATA[Anzahl der Einträge eines Benutzers im Profil anzeigen]]></item>
+	</category>
+
+	<category name="wcf.acp.rebuildData">
+		<item name="wcf.acp.rebuildData.com.viecode.lexicon.applicationObject"><![CDATA[Detect lexicon entries in existing objects]]></item>
+		<item name="wcf.acp.rebuildData.com.viecode.lexicon.applicationObject.description"><![CDATA[Due to performance reasons the lexicon only detects entries in new objects (e.g. posts). Therefore it is possible that not alle entries get detectet in old objects.]]></item>
+		<item name="wcf.acp.rebuildData.com.viecode.lexicon.entry"><![CDATA[Refresh Lexicon Articles]]></item>
+		<item name="wcf.acp.rebuildData.com.viecode.lexicon.entry.description"><![CDATA[Rebuilds the seach index for lexicon articles, refreshes aktivity points and counters]]></item>
+		<item name="wcf.acp.rebuildData.com.viecode.lexicon.terms"><![CDATA[Reset Terms Of Condition]]></item>
+		<item name="wcf.acp.rebuildData.com.viecode.lexicon.terms.description"><![CDATA[Force every user to accept the lexicon terms of conditions again.]]></item>
+	</category>
+
+	<category name="wcf.acp.sitemap">
+		<item name="wcf.acp.sitemap.objectType.com.viecode.lexicon.sitemap.object.category"><![CDATA[Lexicon Categories]]></item>
+		<item name="wcf.acp.sitemap.objectType.com.viecode.lexicon.sitemap.object.entry"><![CDATA[Lexicon Entries]]></item>
+	</category>
+
+	<category name="wcf.bbcode">
+		<item name="wcf.bbcode.lexicon.text"><![CDATA[{if $entryLink}<a href="{@$url}">{$displayText}</a>{else}{$displayText}{/if}]]></item>
+	</category>
+
+	<category name="wcf.clipboard">
+		<item name="wcf.clipboard.item.com.viecode.lexicon.entry.delete"><![CDATA[Delete Permanantly ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.viecode.lexicon.entry.delete.confirmMessage"><![CDATA[Do you really want to delete {if $count != 1}marked articles{else}marked article{/if} permamantly?]]></item>
+		<item name="wcf.clipboard.item.com.viecode.lexicon.entry.disable"><![CDATA[Disable {if $count == 1}Item{else}Items{/if} ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.viecode.lexicon.entry.disableComments"><![CDATA[Disable {if $count == 1}Comment{else}{#$count}Comments{/if} ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.viecode.lexicon.entry.done"><![CDATA[Lock {if $count == 1}Article{else}Articles{/if} ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.viecode.lexicon.entry.enable"><![CDATA[Approve {if $count == 1}Item{else}Items{/if} ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.viecode.lexicon.entry.enableComments"><![CDATA[Approve {if $count == 1}comment{else}{#$count}comments{/if} ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.viecode.lexicon.entry.undone"><![CDATA[Unlock {if $count == 1}Article{else}Articles{/if} ({#$count})]]></item>
+		<item name="wcf.clipboard.item.om.viecode.lexicon.entry.assignLabel"><![CDATA[Assign label ({#$count})]]></item>
+		<item name="wcf.clipboard.label.com.viecode.lexicon.entry.marked"><![CDATA[{if $count == 1}One Article{else}{#$count} Articles{/if} selected]]></item>
+	</category>
+
+	<category name="wcf.like">
+		<item name="wcf.like.objectType.com.viecode.lexicon.likeableEntry"><![CDATA[Lexicon Article]]></item>
+		<item name="wcf.like.title.com.viecode.lexicon.entryComment"><![CDATA[Likes the comment {if $commentAuthor}of <a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>{else}of a guest{/if} on the lexicon entry {if $entry->hasLabels()}{foreach from=$entry->getLabels() item=label}<span class="label badge{if $label->getClassNames()} {$label->getClassNames()}{/if}">{lang}{$label->label}{/lang}</span> {/foreach}{/if}<a href="{link application='lexicon' controller='Entry' object=$entry}#comment{@$commentID}{/link}" class="lexiconEntryLink" data-entry-id="{@$entry->entryID}">{$entry->getTitle()}</a>{if $like->isDislike()} not{/if}.]]></item>
+		<item name="wcf.like.title.com.viecode.lexicon.entryComment.response"><![CDATA[Likes the answer {if $responseAuthor}of <a href="{link controller='User' object=$responseAuthor}{/link}">{$responseAuthor->username}</a>{else}of a guest{/if} on the comment {if $commentAuthor}of <a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>{else}of a guest{/if} on the lexicon entry {if $entry->hasLabels()}{foreach from=$entry->getLabels() item=label}<span class="label badge{if $label->getClassNames()} {$label->getClassNames()}{/if}">{lang}{$label->label}{/lang}</span> {/foreach}{/if}<a href="{link application='lexicon' controller='Entry' object=$entry}#comment{@$commentID}/response{@$responseID}{/link}" class="lexiconEntryLink" data-entry-id="{@$entry->entryID}">{$entry->getTitle()}</a>{if $like->isDislike()} not{/if}.]]></item>
+		<item name="wcf.like.title.com.viecode.lexicon.likeableEntry"><![CDATA[Likes the lexicon entry {if $entry->hasLabels()}{foreach from=$entry->getLabels() item=label}<span class="label badge{if $label->getClassNames()} {$label->getClassNames()}{/if}">{lang}{$label->label}{/lang}</span> {/foreach}{/if}<a href="{link application='lexicon' controller='Entry' object=$entry}{/link}" class="lexicnEntryLink" data-entry-id="{@$entry->entryID}">{$entry->getTitle()}</a>{if $like->isDislike()} not{/if}.]]></item>
+	</category>
+
+	<category name="wcf.moderation">
+		<item name="wcf.moderation.type.com.viecode.lexicon.entry"><![CDATA[Lexicon Article]]></item>
+		<item name="wcf.moderation.type.com.viecode.lexicon.entry.change"><![CDATA[Change in lexicon article]]></item>
+	</category>
+
+	<category name="wcf.page">
+		<item name="wcf.page.category.com.viecode.lexicon"><![CDATA[Lexicon]]></item>
+		<item name="wcf.page.com.viecode.lexicon.EntryAddForm"><![CDATA[Create entry]]></item>
+		<item name="wcf.page.com.viecode.lexicon.EntryEditForm"><![CDATA[Edit entry]]></item>
+		<item name="wcf.page.com.viecode.lexicon.EntryHistoryPage"><![CDATA[Entry history]]></item>
+		<item name="wcf.page.com.viecode.lexicon.EntryListPage"><![CDATA[List entries]]></item>
+		<item name="wcf.page.com.viecode.lexicon.EntryPage"><![CDATA[Entry]]></item>
+		<item name="wcf.page.com.viecode.lexicon.EntryVersionComparisonPage"><![CDATA[Compare versions]]></item>
+		<item name="wcf.page.com.viecode.lexicon.LexiconPage"><![CDATA[Main page]]></item>
+		<item name="wcf.page.com.viecode.lexicon.TermsOfUseForm"><![CDATA[Terms of Use]]></item>
+		<item name="wcf.page.com.viecode.lexicon.UnreadEntryListPage"><![CDATA[Unread entries]]></item>
+		<item name="wcf.page.com.viecode.lexicon.WatchedEntryListPage"><![CDATA[Watched entries]]></item>
+		<item name="wcf.page.onlineLocation.com.viecode.lexicon.Entry"><![CDATA[Lexicon-entry <a href="{link controller='Entry' application='lexicon' object=$entry}{/link}" class="lexiconEntryLink" data-entry-id="{@$entry->entryID}">{$entry->getTitle()}</a>]]></item>
+		<item name="wcf.page.onlineLocation.com.viecode.lexicon.EntryEdit"><![CDATA[Edit lexicon-entry <a href="{link controller='Entry' application='lexicon' object=$entry}{/link}" class="lexiconEntryLink" data-entry-id="{@$entry->entryID}">{$entry->getTitle()}</a>]]></item>
+		<item name="wcf.page.onlineLocation.com.viecode.lexicon.EntryHistory"><![CDATA[Lexicon-entry <a href="{link controller='Entry' application='lexicon' object=$entry}{/link}" class="lexiconEntryLink" data-entry-id="{@$entry->entryID}">{$entry->getTitle()}</a> change log]]></item>
+		<item name="wcf.page.sitemap.lexicon"><![CDATA[Lexicon]]></item>
+	</category>
+
+	<category name="wcf.search">
+		<item name="wcf.search.object.com.viecode.lexicon.entry"><![CDATA[Lexicon Article]]></item>
+		<item name="wcf.search.type.com.viecode.lexicon.entry"><![CDATA[Lexicon Article]]></item>
+	</category>
+
+	<category name="wcf.tagging">
+		<item name="wcf.tagging.objectType.com.viecode.lexicon.entry"><![CDATA[Lexicon Article]]></item>
+		<item name="wcf.tagging.taggedObjects.com.viecode.lexicon.entry"><![CDATA[Articles containing the tag „{$tag->name}“]]></item>
+	</category>
+
+	<category name="wcf.user">
+		<item name="wcf.user.activityPoint.objectType.com.viecode.lexicon.activityPointEvent.entry"><![CDATA[Lexicon Articles]]></item>
+	</category>
+
+	<category name="wcf.user.condition">
+		<item name="wcf.user.condition.lexiconEntries"><![CDATA[Lexicon Entries]]></item>
+	</category>
+
+	<category name="wcf.user.notification">
+		<item name="wcf.user.notification.com.viecode.lexicon"><![CDATA[Lexicon]]></item>
+		<item name="wcf.user.notification.com.viecode.lexicon.entry.edit.notification.entryEdit"><![CDATA[Update of your article]]></item>
+		<item name="wcf.user.notification.com.viecode.lexicon.entry.notification.entry"><![CDATA[New article in watched category]]></item>
+		<item name="wcf.user.notification.com.viecode.lexicon.entry.notification.entryActivation"><![CDATA[Activation of your article]]></item>
+		<item name="wcf.user.notification.com.viecode.lexicon.entryComment.like.notification.like"><![CDATA[Like of a commont]]></item>
+		<item name="wcf.user.notification.com.viecode.lexicon.entryComment.notification.comment"><![CDATA[Comment added to your article]]></item>
+		<item name="wcf.user.notification.com.viecode.lexicon.entryComment.response.like.notification.like"><![CDATA[Like of an answer on a comment]]></item>
+		<item name="wcf.user.notification.com.viecode.lexicon.entryComment.response.notification.commentResponse"><![CDATA[New reponse added to your article]]></item>
+		<item name="wcf.user.notification.com.viecode.lexicon.entryComment.response.notification.commentResponseOwner"><![CDATA[Response to one of your comments]]></item>
+		<item name="wcf.user.notification.com.viecode.lexicon.likeableEntry.notification.like"><![CDATA[Like of an entry]]></item>
+	</category>
+
+	<category name="wcf.user.objectWatch">
+		<item name="wcf.user.objectWatch.enableNotification.com.viecode.lexicon.category"><![CDATA[Approval notifications for new articles]]></item>
+		<item name="wcf.user.objectWatch.subscribe.com.viecode.lexicon.category"><![CDATA[Watch Category]]></item>
+		<item name="wcf.user.objectWatch.unsubscribe.com.viecode.lexicon.category"><![CDATA[Stop Waching Category]]></item>
+	</category>
+
+	<category name="wcf.user.recentActivity">
+		<item name="wcf.user.recentActivity.com.viecode.lexicon.entryComment.recentActivityEvent"><![CDATA[Comment (Lexicon Article)]]></item>
+		<item name="wcf.user.recentActivity.com.viecode.lexicon.entryComment.response.recentActivityEvent"><![CDATA[Reply (Lexicon Article)]]></item>
+		<item name="wcf.user.recentActivity.com.viecode.lexicon.likeableEntry.recentActivityEvent"><![CDATA[Like (Lexicon Article)]]></item>
+		<item name="wcf.user.recentActivity.com.viecode.lexicon.recentActivityEvent.entry"><![CDATA[New (Lexicon Article)]]></item>
+	</category>
+
+</language>
